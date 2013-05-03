@@ -83,7 +83,7 @@ function fileBrowserCallBack(field_name, url, type, win) {
 }
 EOF;
         $output = sprintf($output, $this->Html->url(
-                        array('plugin' => 'file_manager', 'controller' => 'attachments', 'action' => 'browse')
+                        array('plugin' => 'file_manager', 'controller' => 'attachments', 'action' => 'browse' , 'type' => 'tinymce')
         ));
 
         return $output;

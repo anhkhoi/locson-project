@@ -231,7 +231,9 @@ class AttachmentsController extends FileManagerAppController {
      */
     public function admin_browse() {
         if(!isset($this->request->query['type'])):
-            unset($_SESSION['AttachImage']);
+            if(isset($this->request->params['named']['type'])):
+                unset($_SESSION['AttachImage']);
+            endif;
         else:
             //Store Upload data
             (isset($this->request->query['domContain'])) ? $_SESSION['AttachImage']['domContain'] = $this->request->query['domContain'] : '';
