@@ -1,0 +1,23 @@
+/* SQL DUMP */
+.cake-sql-log caption{background:#000;color:#fff;font-weight:700;border-top:1px solid #fff;padding:10px}
+.cake-sql-log thead tr th:first-child{border:none}
+.cake-sql-log thead tr th{background:#ccc;text-align:center;border-left:1px solid #fff;padding:0 15px}
+.cake-sql-log tbody tr{border-top:1px solid #fff}
+.cake-sql-log tbody tr td:nth-child(2){text-align:left!important}
+.cake-sql-log tbody tr td{text-align:center!important;background-color:#f3f3f3;padding:7px 0}
+
+.miss-cont{color:#ec3237!important;text-shadow:1px 0 1px #965e5e}
+#footerNav{height:12px}
+#footerNav .block ul ul{display:none}
+.contact-form .error-message{color:#EC3237;font-size:11px;margin-left:100px;display:block;margin-top:-4px}
+.error-content{border-radius:7px;border:1px solid #ffc8c8;box-shadow:1px 1px 5px #e0e0e0;background:#ffeded url(../img/error.png) no-repeat 25px 25px;padding:30px 30px 30px 60px}
+.error-content ul li{float:left}
+.error-content ul li h3{font-size:16px;color:#dd460b;text-shadow:1px 1px 1px #fff}
+.error-content a{color:#3198e9;margin-left:-3px;font-size:11px;line-height:23px}
+.no-data{color: #ec3237!important;background-color: #ffeded;padding: 15px;margin: 0;border-radius: 5px}
+/*#wrapper header, #mainContent, #wrapper footer{visibility: hidden}*/
+
+.right-content .pagination{text-align: center;padding-top: 20px}
+.right-content .pagination ul span{text-decoration:none;color:#fff;background-color:#ec3237;border-radius:35px;margin-left:10px;cursor:pointer;padding:3px 7px}
+.right-content .pagination ul span a{color:#fff;text-decoration:none}
+.right-content .pagination ul span:hover,.right-content .pagination ul .current{background-color:#41427b}

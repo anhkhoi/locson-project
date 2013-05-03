@@ -1,0 +1,13 @@
+{
+    "name": "Demo",
+    "description": "Demo plugin ........",
+    "author": "Khoi Tran",
+    "authorEmail": "author@example.com",
+    "authorUrl": "http://example.com",
+    "dependencies": {
+        "plugins": [
+            "acl",
+            "extensions"
+        ]
+    }
+}

@@ -1,0 +1,1 @@
+<?php echo $this->Custom->getSetting('Site.headerinfo'); ?>

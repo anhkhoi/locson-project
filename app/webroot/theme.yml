@@ -1,0 +1,19 @@
+name: locson
+description: This is my theme. It is bad
+screenshot: screenshot.png
+
+author: Khoi Tran
+authorEmail: anhkhoi.2389@gmail.com
+authorUrl: anhkhoi.local
+
+menus:
+  - main
+  - danh_muc
+  - footer
+
+regions:
+  - left
+  - contact_1
+  - contact_2
+  - contact_3
+  - contact_4

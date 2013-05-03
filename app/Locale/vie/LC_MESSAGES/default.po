@@ -1,0 +1,79 @@
+msgid "Đang xem"
+msgstr "Đang xem"
+
+msgid "Tổng lượt xem"
+msgstr "Tổng lượt xem"
+
+msgid "Sản phẩm in ấn"
+msgstr "Sản phẩm in ấn"
+
+msgid "Dịch vụ in ấn"
+msgstr "Dịch vụ in ấn"
+
+msgid "Trang chủ"
+msgstr "Trang chủ"
+
+msgid "Dịch vụ"
+msgstr "Dịch vụ"
+
+msgid "Giới thiệu"
+msgstr "Giới thiệu"
+
+msgid "Sản phẩm"
+msgstr "Sản phẩm"
+
+msgid "Tin tức"
+msgstr "Tin tức"
+
+msgid "Lỗi:: Trang không tìm thấy"
+msgstr "Lỗi:: Trang không tìm thấy"
+
+msgid "This field cannot be left blank."
+msgstr "Trường này không được để trống."
+
+msgid "Please provide a valid email address."
+msgstr "Vui lòng nhập email hợp lệ."
+
+msgid "Captcha is invalid"
+msgstr "Captcha không hợp lệ"
+
+msgid "Liên hệ"
+msgstr "Liên hệ"
+
+msgid "Gửi liên hệ"
+msgstr "Gửi liên hệ"
+
+msgid "Địa chỉ"
+msgstr "Địa chỉ"
+
+msgid "Điện thoại"
+msgstr "Điện thoại"
+
+
+msgid "Tiêu đề"
+msgstr "Tiêu đề"
+
+msgid "Họ tên"
+msgstr "Họ tên"
+
+msgid "Nội dung"
+msgstr "Nội dung"
+
+msgid "Thư ngỏ"
+msgstr "Thư ngỏ"
+
+msgid "Bảng giá"
+msgstr "Bảng giá"
+
+msgid "Tin tức ngành In"
+msgstr "Tin tức ngành In"
+
+msgid "Liên hệ của bạn đã được gửi"
+msgstr "Liên hệ của bạn đã được gửi ..."
+
+msgid "Đọc thêm"
+msgstr "Đọc thêm"
+
+msgid "Xem thêm"
+msgstr "Xem thêm"
+

@@ -1,0 +1,15 @@
+2013-04-28 10:45:02 Critical: Unable to get routeable content types: Database connection "Mysql" is missing, or could not be created.
+2013-04-28 10:45:03 Critical: Errors in CakeErrorController: Database connection "Mysql" is missing, or could not be created.
+2013-04-28 10:48:44 Critical: Unable to get routeable content types: Database connection "Mysql" is missing, or could not be created.
+2013-04-28 10:48:48 Critical: Errors in CakeErrorController: Database connection "Mysql" is missing, or could not be created.
+2013-04-30 22:31:05 Critical: Unable to get routeable content types: Database connection "Mysql" is missing, or could not be created.
+2013-04-30 22:31:09 Critical: Errors in CakeErrorController: Database connection "Mysql" is missing, or could not be created.
+2013-05-01 00:26:46 Critical: Unable to get routeable content types: Database connection "Mysql" is missing, or could not be created.
+2013-05-01 00:26:50 Critical: Errors in CakeErrorController: Database connection "Mysql" is missing, or could not be created.
+2013-05-01 13:39:53 Critical: Errors in CakeErrorController: View file "D:\WORKSPACE\croogo150\app\Plugin\Service\View\CakeError\admin_form.ctp" is missing.
+2013-05-01 13:45:56 Critical: Errors in CakeErrorController: View file "D:\WORKSPACE\croogo150\app\Plugin\Service\View\CakeError\admin_form.ctp" is missing.
+2013-05-01 20:26:38 Critical: Errors in CakeErrorController: View file "D:\WORKSPACE\croogo150\app\Plugin\News\View\CakeError\admin_form.ctp" is missing.
+2013-05-03 08:50:33 Critical: Errors in CakeErrorController: Table regions for model Region was not found in datasource default.
+2013-05-03 08:50:34 Critical: Errors in CakeErrorController: Table regions for model Region was not found in datasource default.
+2013-05-03 08:50:38 Critical: Errors in CakeErrorController: Table regions for model Region was not found in datasource default.
+2013-05-03 08:50:38 Critical: Errors in CakeErrorController: Table users for model User was not found in datasource default.

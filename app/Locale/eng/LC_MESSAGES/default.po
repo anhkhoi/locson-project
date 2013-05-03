@@ -1,0 +1,77 @@
+msgid "Đang xem"
+msgstr "Viewing"
+
+msgid "Tổng lượt xem"
+msgstr "Total view"
+
+msgid "Sản phẩm in ấn"
+msgstr "Printing Products"
+
+msgid "Dịch vụ in ấn"
+msgstr "Printing Services"
+
+msgid "Trang chủ"
+msgstr "Home"
+
+msgid "Dịch vụ"
+msgstr "Service"
+
+msgid "Giới thiệu"
+msgstr "About"
+
+msgid "Sản phẩm"
+msgstr "Product"
+
+msgid "Tin tức"
+msgstr "News"
+
+msgid "Lỗi:: Trang không tìm thấy"
+msgstr "Error: Page not found"
+
+msgid "This field cannot be left blank."
+msgstr "This field cannot be left blank."
+
+msgid "Please provide a valid email address."
+msgstr "Please provide a valid email address."
+
+msgid "Captcha is invalid"
+msgstr "Captcha is invalid"
+
+msgid "Liên hệ"
+msgstr "Contact"
+
+msgid "Gửi liên hệ"
+msgstr "Send contact"
+
+msgid "Địa chỉ"
+msgstr "Address"
+
+msgid "Điện thoại"
+msgstr "Phone"
+
+msgid "Tiêu đề"
+msgstr "Title"
+
+msgid "Họ tên"
+msgstr "Fullname"
+
+msgid "Nội dung"
+msgstr "Content"
+
+msgid "Thư ngỏ"
+msgstr "Letter"
+
+msgid "Bảng giá"
+msgstr "Price"
+
+msgid "Tin tức ngành In"
+msgstr "Printing News"
+
+msgid "Liên hệ của bạn đã được gửi"
+msgstr "Your contact have been sended ..."
+
+msgid "Đọc thêm"
+msgstr "Read more"
+
+msgid "Xem thêm"
+msgstr "View more"
