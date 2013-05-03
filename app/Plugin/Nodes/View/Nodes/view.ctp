@@ -1,39 +1,23 @@
+<?php $this->Nodes->set($node); ?>
+<div id="node-<?php echo $this->Nodes->field('id'); ?>" class="node node-type-<?php echo $this->Nodes->field('type'); ?>">
+	<h2><?php echo $this->Nodes->field('title'); ?></h2>
+	<?php
+		echo $this->Nodes->info();
+		echo $this->Nodes->body();
+		echo $this->Nodes->moreInfo();
+	?>
+</div>
+
+<div id="comments" class="node-comments">
 <?php
+	$type = $types_for_layout[$this->Nodes->field('type')];
 
-$_node = $node['Node'];
+	if ($type['Type']['comment_status'] > 0 && $this->Nodes->field('comment_status') > 0) {
+		echo $this->element('Comments.comments');
+	}
 
-if (trim($_node['parent_id']) === ''):
-
-    $this->Html->addCrumb(__($_node['title']), null);
-
-    $html = '<h3 class="blk-tit">' . __($_node['title']) . '</h3>';
-    $html .= '<div class="blk-contents">';
-    $html .= '<div class="contents">';
-    $html .= $_node['body'];
-    $html .= '</div>';
-    $html .= '</div>';
-    echo $html;
-
-else:
-    $parentId = $_node['parent_id'];
-    $obj = ClassRegistry::init('Node');
-    $options = array(
-        'fields' => array('Node.id', 'Node.title', 'Node.slug', 'Node.path'),
-        'conditions' => array('Node.id' => $parentId)
-    );
-
-    $data = $obj->find('first', $options);
-    $parentNode = $data['Node'];
-
-
-    $this->Html->addCrumb(__($parentNode['title']), $parentNode['path']);
-    $this->Html->addCrumb(__($_node['title']), null);
-
-    $html = '<h3 class="blk-tit">' . __($_node['title']) . '</h3>';
-    $html .= '<div class="blk-contents">';
-    $html .= $_node['body'];
-    $html .= '</div>';
-    echo $html;
-
-endif;
+	if ($type['Type']['comment_status'] == 2 && $this->Nodes->field('comment_status') == 2) {
+		echo $this->element('Comments.comments_form');
+	}
 ?>
+</div>
