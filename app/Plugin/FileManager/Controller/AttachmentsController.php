@@ -2,20 +2,6 @@
 
 App::uses('FileManagerAppController', 'FileManager.Controller');
 
-/**
- * Attachments Controller
- *
- * This file will take care of file uploads (with rich text editor integration).
- *
- * PHP version 5
- *
- * @category FileManager.Controller
- * @package  Croogo.FileManager
- * @version  1.0
- * @author   Fahad Ibnay Heylaal <contact@fahad19.com>
- * @license  http://www.opensource.org/licenses/mit-license.php The MIT License
- * @link     http://www.croogo.org
- */
 class AttachmentsController extends FileManagerAppController {
 
     /**
@@ -71,7 +57,7 @@ class AttachmentsController extends FileManagerAppController {
      */
     public function beforeFilter() {
         parent::beforeFilter();
-
+        
         // Comment, Category, Tag not needed
         $this->Node->unbindModel(array('hasMany' => array('Comment'), 'hasAndBelongsToMany' => array('Category', 'Tag')));
 
@@ -82,7 +68,6 @@ class AttachmentsController extends FileManagerAppController {
         if ($this->action == 'admin_add') {
             $this->Security->csrfCheck = false;
         }
-
     }
 
     /**
@@ -106,61 +91,52 @@ class AttachmentsController extends FileManagerAppController {
      * @access public
      */
     public function admin_add() {
+        
         $this->set('title_for_layout', __('Add Attachment'));
-
         if (isset($this->request->params['named']['editor'])) {
             $this->layout = 'admin_full';
         }
-
+        
         if ($this->request->is('post') || !empty($this->request->data)) {
-
-            if (empty($this->data['Node'])) {
-                $this->Node->invalidate('file', __('Upload failed. Please ensure size does not exceed the server limit.'));
-                return;
-            }
-
-            $file = $this->request->data['Node']['file'];
-            unset($this->request->data['Node']['file']);
-
+            
             // check if file with same path exists
-            $destination = WWW_ROOT . $this->uploadsDir . DS . $file['name'];
+            if(isset($this->request->params['form']['qqfile'])):
+                $data = $this->request->params['form']['qqfile'];
+                $file_name = $data['name'];
+                $file_type = $data['type'];
+                $file_tmp_name = $data['tmp_name'];
+            endif;
+            $destination = WWW_ROOT . $this->uploadsDir . DS . $file_name;
             if (file_exists($destination)) {
-                $newFileName = String::uuid() . '-' . $file['name'];
+                $newFileName = String::uuid() . '-' . $file_name;
                 $destination = WWW_ROOT . $this->uploadsDir . DS . $newFileName;
             } else {
-                $newFileName = $file['name'];
+                $newFileName = $file_name;
             }
 
             // remove the extension for title
-            if (explode('.', $file['name']) > 0) {
-                $fileTitleE = explode('.', $file['name']);
+            if (explode('.', $file_name) > 0) {
+                $fileTitleE = explode('.', $file_name);
                 array_pop($fileTitleE);
                 $fileTitle = implode('.', $fileTitleE);
             } else {
-                $fileTitle = $file['name'];
+                $fileTitle = $file_name;
             }
-
+            
             $this->request->data['Node']['title'] = $fileTitle;
             $this->request->data['Node']['slug'] = $newFileName;
-            $this->request->data['Node']['mime_type'] = $file['type'];
+            $this->request->data['Node']['mime_type'] = $file_type;
             //$this->request->data['Node']['guid'] = Router::url('/' . $this->uploadsDir . '/' . $newFileName, true);
             $this->request->data['Node']['path'] = '/' . $this->uploadsDir . '/' . $newFileName;
-
+            
             // move the file
-            $moved = move_uploaded_file($file['tmp_name'], $destination);
-
+            $moved = move_uploaded_file($file_tmp_name, $destination);
+            
             $this->Node->create();
             if ($moved && $this->Node->save($this->request->data)) {
-
-                $this->Session->setFlash(__('The Attachment has been saved'), 'default', array('class' => 'success'));
-
-                if (isset($this->request->params['named']['editor'])) {
-                    $this->redirect(array('action' => 'browse'));
-                } else {
-                    $this->redirect(array('action' => 'browse'));
-                }
+                 echo json_encode(array('success'=>true));exit;
             } else {
-                $this->Session->setFlash(__('The Attachment could not be saved. Please, try again.'), 'default', array('class' => 'error'));
+                echo json_encode(array('error'=>'The Uploader could not be saved. Please, try again.'));exit;
             }
         }
     }
@@ -230,8 +206,8 @@ class AttachmentsController extends FileManagerAppController {
      * @access public
      */
     public function admin_browse() {
-        if(!isset($this->request->query['type'])):
-            if(isset($this->request->params['named']['type'])):
+        if (!isset($this->request->query['type'])):
+            if (isset($this->request->params['named']['type'])):
                 unset($_SESSION['AttachImage']);
             endif;
         else:
@@ -241,7 +217,7 @@ class AttachmentsController extends FileManagerAppController {
 
             (isset($this->request->query['listImage'])) ? $_SESSION['AttachImage']['listImage'] = $this->request->query['listImage'] : '';
         endif;
-        
+
         $this->layout = 'admin_full';
         $this->admin_index();
     }

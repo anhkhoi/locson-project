@@ -99,7 +99,7 @@ echo $this->Form->create('Newstb');
         }
 
         $("#btnUpload").click(function() {
-            window.open('<?php echo 'http://' . $_SERVER['HTTP_HOST']; ?>/admin/file_manager/attachments/browse?type=feature&inputHidden=NewstbImages&domContain=divfeature', '', 'width=800,height=600');
+            window.open('<?php echo 'http://' . $_SERVER['HTTP_HOST']; ?>/admin/file_manager/attachments/browse?type=feature&inputHidden=NewstbImages&domContain=divfeature', '', 'width=900,height=600');
         });
     });
 </script>

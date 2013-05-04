@@ -102,11 +102,11 @@ echo $this->Form->create('Product');
         }
 
         $("#btnUpload").click(function() {
-            window.open('<?php echo 'http://' . $_SERVER['HTTP_HOST']; ?>/admin/file_manager/attachments/browse?type=feature&inputHidden=ProductImages&domContain=divfeature', '', 'width=800,height=600');
+            window.open('<?php echo 'http://' . $_SERVER['HTTP_HOST']; ?>/admin/file_manager/attachments/browse?type=feature&inputHidden=ProductImages&domContain=divfeature', '', 'width=900,height=600');
         });
         
         $("#btnInsert").click(function() {
-            window.open('<?php echo 'http://' . $_SERVER['HTTP_HOST']; ?>/admin/file_manager/attachments/browse?type=feature&domContain=&listImage=ProductImglistid', '', 'width=800,height=600');
+            window.open('<?php echo 'http://' . $_SERVER['HTTP_HOST']; ?>/admin/file_manager/attachments/browse?type=feature&domContain=&listImage=ProductImglistid', '', 'width=900,height=600');
         });
     });
 </script>
