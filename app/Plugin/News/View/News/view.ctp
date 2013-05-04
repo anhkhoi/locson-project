@@ -1,6 +1,6 @@
 <?php
 
-$this->Html->addCrumb(__('Tin tức'), '/tin-tuc');
+$this->Html->addCrumb(__('Tin tức'), '/tin-tuc.html');
 if ($parentId == 1):
     echo $this->element('category');
 else:

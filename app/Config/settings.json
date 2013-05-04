@@ -5,10 +5,10 @@
 		"copyright": "Copyright &copy 2013 by LocSon Company",
 		"email": "locson@gmail.com",
 		"feed_url": "",
-		"locale": "eng",
+		"locale": "vie",
 		"status": 1,
 		"tagline": "",
-		"theme": "",
+		"theme": "locson",
 		"timezone": 0,
 		"title": "Loc Son Company",
 		"phone": "0192.928.892",
@@ -60,6 +60,7 @@
 		"images": "/uploads/thumb_4.jpg"
 	},
 	"Product": {
-		"feature": "46,11,35,36,37,38,39,40,43,50,51,52,53,54,55,56,"
+		"feature": "46,11,35,36,37,38,39,40,43,50,51,52,53,54,55,56,",
+		"contact": "<span><b>Kh\u00e1ch h\u00e0ng mu\u1ed1n bi\u1ebft chi ti\u1ebft xin li\u00ean h\u1ec7 theo th\u00f4ng tin d\u01b0\u1edbi \u0111\u00e2y</b></span>\r\n<span><b>T\u01b0 v\u1ea5n 1:</b> 023029309 , <b>T\u01b0 v\u1ea5n 2:</b> 023029029</span>\r\n<span>Ho\u1eb7c g\u1eedi li\u00ean h\u1ec7: <a href=\"/lien-he.html\">T\u1ea1i \u0111\u00e2y</a></span>\r\n<span><b>Xin tr\u00e2n th\u00e0nh c\u1ea3m \u01a1n.</b></span>"
 	}
 }

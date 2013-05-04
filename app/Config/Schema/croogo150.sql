@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50516
 File Encoding         : 65001
 
-Date: 2013-05-04 12:15:25
+Date: 2013-05-04 21:15:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -530,7 +530,7 @@ CREATE TABLE `counters` (
   `ip_address` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
   `last_visit` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=204 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=212 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of counters
@@ -682,6 +682,14 @@ INSERT INTO `counters` VALUES ('200', '127.0.0.1', '2013-05-03 19:59:25');
 INSERT INTO `counters` VALUES ('201', '127.0.0.1', '2013-05-04 09:19:33');
 INSERT INTO `counters` VALUES ('202', '127.0.0.1', '2013-05-04 10:30:30');
 INSERT INTO `counters` VALUES ('203', '127.0.0.1', '2013-05-04 11:00:52');
+INSERT INTO `counters` VALUES ('204', '127.0.0.1', '2013-05-04 13:45:28');
+INSERT INTO `counters` VALUES ('205', '127.0.0.1', '2013-05-04 14:00:33');
+INSERT INTO `counters` VALUES ('206', '127.0.0.1', '2013-05-04 14:15:48');
+INSERT INTO `counters` VALUES ('207', '127.0.0.1', '2013-05-04 14:31:43');
+INSERT INTO `counters` VALUES ('208', '127.0.0.1', '2013-05-04 20:16:18');
+INSERT INTO `counters` VALUES ('209', '127.0.0.1', '2013-05-04 20:31:24');
+INSERT INTO `counters` VALUES ('210', '127.0.0.1', '2013-05-04 20:46:39');
+INSERT INTO `counters` VALUES ('211', '127.0.0.1', '2013-05-04 21:02:13');
 
 -- ----------------------------
 -- Table structure for `i18n`
@@ -806,13 +814,13 @@ INSERT INTO `links` VALUES ('14', null, '6', 'CakePHP', 'cakephp', '', 'http://w
 INSERT INTO `links` VALUES ('16', null, '5', 'Entries (RSS)', 'entries-rss', '', '/promoted.rss', '', '', '1', '3', '4', '', '', '2009-10-27 17:46:22', '2009-10-27 17:46:22');
 INSERT INTO `links` VALUES ('17', null, '5', 'Comments (RSS)', 'comments-rss', '', '/comments.rss', '', '', '1', '5', '6', '', '', '2009-10-27 17:46:54', '2009-10-27 17:46:54');
 INSERT INTO `links` VALUES ('18', '8', '3', 'Thư ngỏ', '', '', 'plugin:nodes/controller:nodes/action:view/type:page/slug:thu-ngo', '', '', '1', '8', '9', '', '', '2013-04-23 20:14:43', '2013-04-22 18:54:49');
-INSERT INTO `links` VALUES ('20', null, '3', 'Service', '', '', '/dich-vu.html', '', '', '1', '11', '24', '', '', '2013-05-03 15:54:16', '2013-04-22 18:55:46');
+INSERT INTO `links` VALUES ('20', null, '3', 'Dịch vụ', '', '', '/dich-vu.html', '', '', '1', '11', '24', '', '', '2013-05-04 20:54:45', '2013-04-22 18:55:46');
 INSERT INTO `links` VALUES ('21', '20', '3', 'In offset giá rẻ', '', '', '/dich-vu/in-offset-gia-re-39', '', '', '1', '12', '13', '', '', '2013-05-01 15:21:01', '2013-04-22 18:56:09');
 INSERT INTO `links` VALUES ('22', '20', '3', 'In decal TP.HCM', '', '', '/dich-vu/in-decal-tphcm-38', '', '', '1', '14', '15', '', '', '2013-05-01 15:21:09', '2013-04-22 18:56:30');
 INSERT INTO `links` VALUES ('23', '20', '3', 'In offset chuyển nhiệt', '', '', '/dich-vu/in-offset-chuyen-nhiet-37', '', '', '1', '16', '17', '', '', '2013-05-01 15:21:19', '2013-04-22 18:57:03');
-INSERT INTO `links` VALUES ('24', null, '3', 'Product', '', '', '/san-pham.html', '', '', '1', '25', '26', '', '', '2013-05-03 15:53:24', '2013-04-22 18:57:16');
+INSERT INTO `links` VALUES ('24', null, '3', 'Sản phẩm', '', '', '/san-pham.html', '', '', '1', '25', '26', '', '', '2013-05-04 20:55:07', '2013-04-22 18:57:16');
 INSERT INTO `links` VALUES ('25', null, '3', 'Bảng giá', '', '', 'plugin:nodes/controller:nodes/action:view/type:page/slug:bang-gia', '', '', '1', '27', '28', '', '', '2013-04-23 20:20:01', '2013-04-22 18:57:28');
-INSERT INTO `links` VALUES ('26', null, '3', 'News', '', '', '/tin-tuc.html', '', '', '1', '29', '34', '', '', '2013-05-03 15:54:31', '2013-04-22 18:57:47');
+INSERT INTO `links` VALUES ('26', null, '3', 'Tin tức', '', '', '/tin-tuc.html', '', '', '1', '29', '34', '', '', '2013-05-04 20:55:24', '2013-04-22 18:57:47');
 INSERT INTO `links` VALUES ('27', '26', '3', 'Tin tức ngành in', '', '', '/tin-tuc/tin-tuc-nganh-in-46', '', '', '1', '30', '31', '', '', '2013-05-02 11:23:04', '2013-04-22 18:58:11');
 INSERT INTO `links` VALUES ('29', null, '7', 'Dịch vụ thiết kế web', '', '', 'http://www.vietsol.net/thiet-ke-website/', '', '', '1', '1', '2', '', '', '2013-04-23 04:46:00', '2013-04-23 04:46:00');
 INSERT INTO `links` VALUES ('30', null, '7', 'Máy phát điện', '', '', 'http://mayphatdiennamnguyen.com', '', '', '1', '3', '4', '', '', '2013-04-23 04:46:33', '2013-04-23 04:46:33');
@@ -853,7 +861,7 @@ INSERT INTO `links` VALUES ('65', '20', '3', 'In áo thun', '', '', '/dich-vu/in
 INSERT INTO `links` VALUES ('66', '20', '3', 'Nhận in gia công giá rẻ', '', '', '/dich-vu/nhan-in-gia-cong-gia-re-36', '', '', '1', '20', '21', '', '', '2013-05-01 15:21:38', '2013-04-23 11:03:04');
 INSERT INTO `links` VALUES ('67', '20', '3', 'Cán màng nhiệt', '', '', '/dich-vu/can-mang-nhiet-35', '', '', '1', '22', '23', '', '', '2013-05-01 15:21:47', '2013-04-23 11:03:25');
 INSERT INTO `links` VALUES ('68', '26', '3', 'Kỹ thuật in ấn', '', '', '/tin-tuc/ky-thuat-in-an-47', '', '', '1', '32', '33', '', '', '2013-05-02 11:23:13', '2013-04-23 12:27:33');
-INSERT INTO `links` VALUES ('69', null, '3', 'Contact', '', '', '/lien-he.html', '', '', '1', '35', '36', '', '', '2013-05-03 16:02:14', '2013-04-24 05:50:54');
+INSERT INTO `links` VALUES ('69', null, '3', 'Liên hệ', '', '', '/lien-he.html', '', '', '1', '35', '36', '', '', '2013-05-04 20:55:33', '2013-04-24 05:50:54');
 
 -- ----------------------------
 -- Table structure for `menus`
@@ -991,7 +999,7 @@ CREATE TABLE `nodes` (
   `updated` datetime NOT NULL,
   `created` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of nodes
@@ -1296,7 +1304,7 @@ INSERT INTO `settings` VALUES ('22', 'Reading.nodes_per_page', '5', '', '', '', 
 INSERT INTO `settings` VALUES ('23', 'Writing.wysiwyg', '1', 'Enable WYSIWYG editor', '', 'checkbox', '1', '16', '');
 INSERT INTO `settings` VALUES ('24', 'Comment.level', '1', '', 'levels deep (threaded comments)', '', '1', '17', '');
 INSERT INTO `settings` VALUES ('25', 'Comment.feed_limit', '10', '', 'number of comments to show in feed', '', '1', '18', '');
-INSERT INTO `settings` VALUES ('26', 'Site.locale', 'eng', '', '', 'text', '0', '19', '');
+INSERT INTO `settings` VALUES ('26', 'Site.locale', 'vie', '', '', 'text', '0', '19', '');
 INSERT INTO `settings` VALUES ('27', 'Reading.date_time_format', 'D, M d Y H:i:s', '', '', '', '1', '20', '');
 INSERT INTO `settings` VALUES ('28', 'Comment.date_time_format', 'M d, Y', '', '', '', '1', '21', '');
 INSERT INTO `settings` VALUES ('29', 'Site.timezone', '0', '', 'zero (0) for GMT', '', '1', '3', '');

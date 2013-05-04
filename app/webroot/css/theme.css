@@ -15,7 +15,7 @@
 .error-content ul li h3{font-size:16px;color:#dd460b;text-shadow:1px 1px 1px #fff}
 .error-content a{color:#3198e9;margin-left:-3px;font-size:11px;line-height:23px}
 .no-data{color: #ec3237!important;background-color: #ffeded;padding: 15px;margin: 0;border-radius: 5px}
-/*#wrapper header, #mainContent, #wrapper footer{visibility: hidden}*/
+/*#wrapper header, #mainContent, #wrapper footer, #sec_contact{visibility: hidden}*/
 
 .right-content .pagination{text-align: center;padding-top: 20px}
 .right-content .pagination ul span{text-decoration:none;color:#fff;background-color:#ec3237;border-radius:35px;margin-left:10px;cursor:pointer;padding:3px 7px}

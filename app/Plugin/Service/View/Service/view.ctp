@@ -1,6 +1,6 @@
 <?php
 
-$this->Html->addCrumb(__('Dịch vụ'), '/dich-vu');
+$this->Html->addCrumb(__('Dịch vụ'), '/dich-vu.html');
 
 if (count($arrData) > 0):
     $this->Html->addCrumb(__($arrData['Service']['title']), null);
