@@ -17444,3 +17444,65 @@
 2013-05-03 16:57:43 Error: Plugin not found during bootstrap: PlgService
 2013-05-03 16:57:44 Error: Plugin not found during bootstrap: PlgService
 2013-05-03 16:57:51 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:09 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:16 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:16 Error: [MissingControllerException] Controller class ThemeController could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:16 Error: [MissingControllerException] Controller class ThemeController could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:18 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:19 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:21 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:22 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:26 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:27 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:27 Error: [MissingControllerException] Controller class ThemeController could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:27 Error: [MissingControllerException] Controller class ThemeController could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:28 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:28 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:33 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:36 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:36 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:36 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:37 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:40 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:40 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:40 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:40 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:43 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:43 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:43 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:43 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:46 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:31:46 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:31:46 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:32:04 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:32:10 Error: Plugin not found during bootstrap: PlgService
+2013-05-09 07:32:10 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 07:32:10 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 D:\WORKSPACE\locson-project\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
