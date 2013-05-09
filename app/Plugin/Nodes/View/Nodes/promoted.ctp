@@ -1,7 +1,7 @@
-<?php $this->set("title_for_layout", __('Trang ch?')); ?>
+<?php $this->set("title_for_layout", __('Trang chủ')); ?>
 <div id="modContent" class="clearfix">
     <section id="modIntro">
-        <h3 class="blk-tit"><?php echo __('Gi?i thi?u'); ?></h3>
+        <h3 class="blk-tit"><?php echo __('Giới thiệu'); ?></h3>
         <?php 
             
             $objNode = ClassRegistry::init('Nodes');
@@ -23,13 +23,13 @@
         <div class="intro-content">
             <?php if(count($arrData) > 0): ?>
             <?php echo $this->Text->truncate($arrData[0]['Nodes']['excerpt'], 850, array('exact' => false)); ?>
-            <a href="<?php echo $arrData[0]['Nodes']['path']; ?>" class="more"><?php echo __('Xem th�m'); ?></a>
+            <a href="<?php echo $arrData[0]['Nodes']['path']; ?>" class="more"><?php echo __('Xem thêm'); ?></a>
             <?php endif; ?>
         </div>
     </section>
 
     <section id="modProduct">
-        <h3 class="blk-tit"><?php echo __('D?ch v?'); ?></h3>
+        <h3 class="blk-tit"><?php echo __('Dịch vụ'); ?></h3>
         <?php
         $Service = ClassRegistry::init('Service');
         $arrData = $Service->find('all', array(
@@ -64,7 +64,7 @@
     </section>
 
     <section id="modNews">
-        <h3 class="blk-tit"><?php echo __('Tin t?c'); ?></h3>
+        <h3 class="blk-tit"><?php echo __('Tin tức'); ?></h3>
         <?php
         $News = ClassRegistry::init('Newstb');
         $arrData = $News->find('all', array(
