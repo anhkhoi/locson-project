@@ -19,6 +19,9 @@ $this->Html->addCrumb(__('Khách hàng'), null);
                             if ($vals['I18nModel']['field'] === 'title'):
                                 $title = $vals['I18nModel']['content'];
                             endif;
+                            if ($vals['I18nModel']['field'] === 'description'):
+                                $title = $vals['I18nModel']['content'];
+                            endif;
                         endforeach;
                     endif;
                 endif;

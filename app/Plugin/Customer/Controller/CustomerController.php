@@ -16,6 +16,7 @@ class CustomerController extends CustomerAppController {
     }
 
     public function index() {
+        $this->set('title_for_layout', __("Khách hàng"));
         $nodeList = $this->paginate('Customer',array('Customer.parent > ' => 0));
         $this->set('nodeList',$nodeList);
     }

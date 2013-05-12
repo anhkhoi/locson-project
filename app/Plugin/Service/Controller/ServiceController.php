@@ -24,6 +24,7 @@ class ServiceController extends ServiceAppController {
     }
 
     public function index() {
+        $this->set('title_for_layout', __("Dịch vụ"));
         $nodeList = $this->paginate('Service',array('Service.parent > ' => 0));
         $this->set('nodeList',$nodeList);
     }

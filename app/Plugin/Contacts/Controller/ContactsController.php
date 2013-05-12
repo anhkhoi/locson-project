@@ -196,7 +196,7 @@ class ContactsController extends ContactsAppController {
             }
         }
 
-        $this->set('title_for_layout', $contact['Contact']['title']);
+        $this->set('title_for_layout', __("Liên hệ"));
         $this->set(compact('continue'));
     }
 
