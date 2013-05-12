@@ -38,6 +38,7 @@ echo $this->Html->script(array('jquery/jquery.min', 'jquery/jquery.mousewheel.mi
             <li><a href="#link-service" data-toggle="tab"><?php echo __('Service'); ?></a></li>
             <li><a href="#link-news" data-toggle="tab"><?php echo __('News'); ?></a></li>
             <li><a href="#link-products" data-toggle="tab"><?php echo __('Products'); ?></a></li>
+            <li><a href="#link-customer" data-toggle="tab"><?php echo __('Customers'); ?></a></li>
         </ul>
 
         <div class="tab-content">
@@ -158,6 +159,30 @@ echo $this->Html->script(array('jquery/jquery.min', 'jquery/jquery.mousewheel.mi
                 </ul>
             </div>
 
+            <div id="link-customer" class="tab-pane">
+                <ul class="nodes-for-links">
+                    <?php foreach ($customerData as $node) { ?>
+                        <li>
+                            <?php
+                            if($node['Customer']['parent'] == 0):
+                                $rel = '/khach-hang.html';
+                            endif;
+                            
+                                echo $this->Html->link($node['Customer']['title'], array(
+                                'admin' => false,
+                                'plugin' => 'customer',
+                                'controller' => 'customer',
+                                'action' => 'view'
+                                ), array(
+                                    'onclick'=>'javascript:getLinkForNode(this)',
+                                    'rel' => $rel
+                                ));
+                            ?>
+                        </li>
+                    <?php } ?>
+                </ul>
+            </div>
+            
         </div>
     </div>
 </div>

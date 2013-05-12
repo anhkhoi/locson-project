@@ -340,4 +340,4 @@ Cache::config('_cake_model_', array(
 
 
 //Theme Config
-Configure::write('Theme.error',false);
+Configure::write('Theme.error',true);

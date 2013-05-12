@@ -54,7 +54,7 @@
                             <?php echo $this->Custom->image($images, array('class' => 'img-border', 'alt' => 'image product')); ?>
                         </a>
                         <div class="liitem">
-                            <a class="lnk-tit" title="<?php echo $title; ?>" href="<?php echo $path; ?>"><?php echo $this->Text->truncate($title, 28, array('ellipsis' => '...', 'exact' => false)); ?></a>
+                            <a class="lnk-tit" title="<?php echo $title; ?>" href="<?php echo $path; ?>"><?php echo $this->Text->truncate($title, 26, array('ellipsis' => '...', 'exact' => false)); ?></a>
                             <span><?php echo $this->Text->truncate($excerpt, 75, array('exact' => false)); ?></span>
                         </div>
                     </li>
@@ -89,8 +89,8 @@
                             <?php echo $this->Custom->image($images, array('class' => 'img-border', 'alt' => 'image product')); ?>
                         </a>
                         <div class="liitem">
-                            <a class="lnk-tit" href="<?php echo $path; ?>"><?php echo $this->Text->truncate($title, 28, array('ellipsis' => '...', 'exact' => false)); ?></a>
-                            <span><?php echo $this->Text->truncate($excerpt, 75, array('exact' => false)); ?></span>
+                            <a class="lnk-tit" href="<?php echo $path; ?>"><?php echo $this->Text->truncate($title, 26, array('ellipsis' => '...', 'exact' => false)); ?></a>
+                            <span><?php echo $this->Text->truncate($excerpt, 70, array('exact' => false)); ?></span>
                         </div>
                     </li>
                 <?php endforeach; ?>

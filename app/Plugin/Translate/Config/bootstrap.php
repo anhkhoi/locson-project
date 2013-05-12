@@ -57,6 +57,13 @@ Configure::write('Translate.models', array(
         ),
         'translateModel' => 'News.Newstb',
     ),
+    'Customer' => array(
+        'fields' => array(
+            'title' => 'titleCustomer',
+            'description' => 'descriptionCustomer'
+        ),
+        'translateModel' => 'Customer.Customer',
+    ),
 ));
 
 /**

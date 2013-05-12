@@ -55,9 +55,7 @@ class NodesController extends NodesAppController {
  * @var array
  * @access public
  */
-	public $uses = array(
-		'Nodes.Node','Service.Service','News.Newstb','Products.Product'
-	);
+	public $uses = array('Nodes.Node','Service.Service','News.Newstb','Products.Product','Customer.Customer');
 
         public $paginate = array(
             'Node' => array(
@@ -79,7 +77,12 @@ class NodesController extends NodesAppController {
                 'conditions' => array('status' => 1),
                 'order' => array('id desc'),
                 'fields' => array('id','title','slug','parent')
-                )
+                ),
+             'Customer' => array(
+                'conditions' => array('status' => 1,'parent'=>0),
+                'order' => array('id desc'),
+                'fields' => array('id','title','slug','parent')
+                ),
         );
 /**
  * afterConstruct
@@ -162,10 +165,15 @@ class NodesController extends NodesAppController {
                 $productData = $this->paginate('Product');
                 $this->set('productData',$productData);
                 
+                //Customer Link
+                $customerData = $this->paginate('Customer');
+                $this->set('customerData',$customerData);
+                
 		if (isset($this->request->params['named']['links'])) {
 			$this->layout = 'ajax';
 			$this->render('admin_links');
 		}
+                
 	}
 
 /**

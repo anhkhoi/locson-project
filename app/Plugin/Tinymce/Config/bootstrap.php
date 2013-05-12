@@ -59,6 +59,19 @@ Configure::write('Tinymce.actions', array(
         array(
             'elements' => 'NewstbDescription'
         ),
+        array(
+            'elements' => 'CustomerDescription'
+        ),
+    ),
+    'Customer/admin_add' => array(
+        array(
+            'elements' => 'CustomerDescription'
+        )
+    ),
+    'Customer/admin_edit' => array(
+        array(
+            'elements' => 'CustomerDescription'
+        )
     ),
 ));
 

@@ -8,7 +8,7 @@
 		"locale": "vie",
 		"status": 1,
 		"tagline": "",
-		"theme": "",
+		"theme": "locson",
 		"timezone": 0,
 		"title": "Loc Son Company",
 		"phone": "0192.928.892",
@@ -17,7 +17,7 @@
 		"footerinfo": "<p><b>Cty C\u1ed5 Ph\u1ea7n Vi\u1ec7t In</b></p>\r\n    <p>\u0110\u1ecba ch\u1ec9: 423/29 L\u1ea1c Long Qu\u00e2n, Ph\u01b0\u1eddng 5, Q.11, TP.HCM</p>\r\n    <p>\u0110i\u1ec7n tho\u1ea1i: 08.3975.6726 - Fax: 08.3975.2451</p>\r\n    <p>Email: <a href=\"mailto:kinhdoanh@congtyvietin.com\">kinhdoanh@congtyvietin.com</a> - <a href=\"mailto:sale@congtyvietin.com\">sale@congtyvietin.com</a></p>"
 	},
 	"Hook": {
-		"bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate,PlgService,Service,News,Products,Support"
+		"bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate,PlgService,Service,News,Products,Support,Customer"
 	},
 	"Access Control": {
 		"models": "",
