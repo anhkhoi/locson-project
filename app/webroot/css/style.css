@@ -936,9 +936,9 @@ html ul.topnav li ul.subnav li a:hover {
 }
 
 /* Fix menu: change style */
-ul.topnav{padding-top:1px}
+ul.topnav{}
 ul.topnav li ul.subnav{top:43px}
-ul.topnav .active,ul.topnav .subhover{background:url(../img/bgmn_hover.png) no-repeat center;height:43px}
+ul.topnav .active,ul.topnav .subhover{background:url(../img/bgmn_hover.png) no-repeat center;height:43px;border-bottom: 1px solid rgb(102, 103, 172)}
 ul.topnav li.active a,ul.topnav li.subhover a{color:#fff}
 html ul.topnav li ul.subnav li a{background:#656697;color:#fff}
 html ul.topnav li ul.subnav li a:hover{background-color:#ec3237}
