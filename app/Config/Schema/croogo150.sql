@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50516
 File Encoding         : 65001
 
-Date: 2013-05-12 12:57:52
+Date: 2013-05-12 13:08:44
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,12 +28,12 @@ CREATE TABLE `acos` (
   `lft` int(10) DEFAULT NULL,
   `rght` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=275 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=283 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of acos
 -- ----------------------------
-INSERT INTO `acos` VALUES ('1', null, '', null, 'controllers', '1', '462');
+INSERT INTO `acos` VALUES ('1', null, '', null, 'controllers', '1', '478');
 INSERT INTO `acos` VALUES ('2', '208', '', null, 'Attachments', '129', '140');
 INSERT INTO `acos` VALUES ('3', '2', '', null, 'admin_index', '130', '131');
 INSERT INTO `acos` VALUES ('4', '2', '', null, 'admin_add', '132', '133');
@@ -265,6 +265,14 @@ INSERT INTO `acos` VALUES ('271', '270', null, null, 'admin_index', '452', '453'
 INSERT INTO `acos` VALUES ('272', '270', null, null, 'admin_add', '454', '455');
 INSERT INTO `acos` VALUES ('273', '270', null, null, 'admin_edit', '456', '457');
 INSERT INTO `acos` VALUES ('274', '270', null, null, 'admin_delete', '458', '459');
+INSERT INTO `acos` VALUES ('275', '1', null, null, 'Customer', '462', '477');
+INSERT INTO `acos` VALUES ('276', '275', null, null, 'Customer', '463', '476');
+INSERT INTO `acos` VALUES ('277', '276', null, null, 'index', '464', '465');
+INSERT INTO `acos` VALUES ('278', '276', null, null, 'admin_index', '466', '467');
+INSERT INTO `acos` VALUES ('279', '276', null, null, 'admin_add', '468', '469');
+INSERT INTO `acos` VALUES ('280', '276', null, null, 'admin_edit', '470', '471');
+INSERT INTO `acos` VALUES ('281', '276', null, null, 'admin_delete', '472', '473');
+INSERT INTO `acos` VALUES ('282', '276', null, null, 'slug', '474', '475');
 
 -- ----------------------------
 -- Table structure for `aros`
@@ -302,7 +310,7 @@ CREATE TABLE `aros_acos` (
   `_update` varchar(2) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   `_delete` varchar(2) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of aros_acos
@@ -403,6 +411,13 @@ INSERT INTO `aros_acos` VALUES ('95', '3', '267', '1', '1', '1', '1');
 INSERT INTO `aros_acos` VALUES ('96', '3', '268', '1', '1', '1', '1');
 INSERT INTO `aros_acos` VALUES ('97', '2', '167', '1', '1', '1', '1');
 INSERT INTO `aros_acos` VALUES ('98', '2', '163', '1', '1', '1', '1');
+INSERT INTO `aros_acos` VALUES ('99', '3', '277', '1', '1', '1', '1');
+INSERT INTO `aros_acos` VALUES ('100', '2', '278', '1', '1', '1', '1');
+INSERT INTO `aros_acos` VALUES ('101', '2', '280', '1', '1', '1', '1');
+INSERT INTO `aros_acos` VALUES ('102', '2', '281', '1', '1', '1', '1');
+INSERT INTO `aros_acos` VALUES ('103', '3', '282', '1', '1', '1', '1');
+INSERT INTO `aros_acos` VALUES ('104', '2', '282', '-1', '-1', '-1', '-1');
+INSERT INTO `aros_acos` VALUES ('105', '2', '279', '1', '1', '1', '1');
 
 -- ----------------------------
 -- Table structure for `blocks`
@@ -530,7 +545,7 @@ CREATE TABLE `counters` (
   `ip_address` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
   `last_visit` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=230 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=231 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of counters
@@ -708,6 +723,7 @@ INSERT INTO `counters` VALUES ('226', '127.0.0.1', '2013-05-12 12:01:43');
 INSERT INTO `counters` VALUES ('227', '127.0.0.1', '2013-05-12 12:21:32');
 INSERT INTO `counters` VALUES ('228', '127.0.0.1', '2013-05-12 12:37:58');
 INSERT INTO `counters` VALUES ('229', '127.0.0.1', '2013-05-12 12:53:08');
+INSERT INTO `counters` VALUES ('230', '127.0.0.1', '2013-05-12 13:08:19');
 
 -- ----------------------------
 -- Table structure for `customers`
