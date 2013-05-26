@@ -33,6 +33,9 @@ echo $this->Form->create('Customer');
                 echo $this->Form->input('title', array(
                     'label' => __('Title')
                 ));
+                echo $this->Form->input('excerpt', array(
+                    'label' => __('Excerpt')
+                ));
                 echo $this->Form->input('description', array(
                     'label' => __('Description')
                 ));

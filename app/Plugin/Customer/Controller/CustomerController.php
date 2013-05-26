@@ -7,7 +7,8 @@ class CustomerController extends CustomerAppController {
     public $uses = array('Nodes.Node', 'Customer.Customer');
     public $paginate = array(
         'Customer' => array(
-            'limit' => 10
+            'limit' => 10,
+            'order' => 'updated DESC'
         )
     );
 
@@ -21,12 +22,24 @@ class CustomerController extends CustomerAppController {
         $this->set('nodeList',$nodeList);
     }
 
+    public function view() {
+        if (isset($this->request->params['id']) && $this->request->params['id'] !== ''):
+            $tmp = $this->Customer->findById($this->request->params['id'], array('parent','title'));
+            $this->set('parentTitle',$tmp['Customer']['title']);
+            $this->set('parentId',$tmp['Customer']['parent']);
+            $id = (int) $this->request->params['id'];
+            $data = $this->paginate('Customer', array('id' => $id));
+            $this->set('title_for_layout', ($data[0]['Customer']['title'] !== '') ? __($data[0]['Customer']['title']) . ' | ' . __('Tin tức') : '' . __('Tin tức'));
+            $this->set('arrData', $data);
+        endif;
+    }
+    
     public function admin_index() {
         $this->set('title_for_layout', __("Customers"));
         $this->paginate['Customer']['order'] = 'Customer.title ASC';
         $data = $this->paginate('Customer');
 
-        $data = Set::sort($data, '{n}.Customer.updated', 'desc');
+        //$data = Set::sort($data, '{n}.Customer.updated', 'desc');
         foreach ($data as $keys => $vals):
             $dateTime = new DateTime($vals[$this->name]['updated']);
             $data[$keys][$this->name]['updated'] = $dateTime->format('H:i || d-m-Y');
@@ -162,7 +175,7 @@ class CustomerController extends CustomerAppController {
             'D');
         $newStr = str_replace($arrayTVietDungSan, $arrayKoDau, $string);
         $newStr = str_replace($arrayTVietToHop, $arrayKoDau, $newStr);
-        $arrReplace = array('!', '@', '#', '$', '^', '&', '*', '(', ')', '_', '+', ',', '.', '\\', '/', '"', '?', ':');
+        $arrReplace = array('!', '@', '#', '$', '^', '&', '*', '(', ')', '_', '+', ',', '.', '\\', '/', "'", '"', '?', ':');
         $newStr = str_replace($arrReplace, '', $newStr);
         $newStr = str_replace(' ', '-', $newStr);
         $newStr = trim($newStr);

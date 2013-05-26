@@ -247,7 +247,7 @@ class ProductsController extends ProductsAppController {
             'D');
         $Productstr = str_replace($arrayTVietDungSan, $arrayKoDau, $string);
         $Productstr = str_replace($arrayTVietToHop, $arrayKoDau, $Productstr);
-        $arrReplace = array('!', '@', '#', '$', '^', '&', '*', '(', ')', '_', '+', ',', '.', '\\', '/', '"', '?', ':');
+        $arrReplace = array('!', '@', '#', '$', '^', '&', '*', '(', ')', '_', '+', ',', '.', '\\', '/', "'", '"', '?', ':');
         $Productstr = str_replace($arrReplace, '', $Productstr);
         $Productstr = str_replace(' ', '-', $Productstr);
         $Productstr = trim($Productstr);

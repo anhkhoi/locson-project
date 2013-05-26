@@ -72,7 +72,7 @@ Configure::write('Tinymce.actions', array(
         array(
             'elements' => 'CustomerDescription'
         )
-    ),
+    )
 ));
 
 /**

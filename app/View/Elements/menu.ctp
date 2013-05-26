@@ -23,6 +23,8 @@
                     _this.attr('class', 'active');
                 } else if (href === '/dich-vu' && Croogo.params.controller === 'service' && Croogo.params.plugin === 'service') {
                     _this.attr('class', 'active');
+                } else if (href === '/khach-hang' && Croogo.params.controller === 'customer' && Croogo.params.plugin === 'customer') {
+                    _this.attr('class', 'active');
                 }
             }
 

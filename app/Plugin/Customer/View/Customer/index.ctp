@@ -8,8 +8,9 @@ $this->Html->addCrumb(__('Khách hàng'), null);
             <?php
             foreach ($nodeList as $value):
                 $value = $value['Customer'];
+                $nodePath = $value['path'];
                 $title = $value['title'];
-                $description = $value['description'];
+                $excerpt = $value['excerpt'];
                 $images = $value['images'];
                 if (Configure::read('Config.language') === 'eng'):
                     $langObj = ClassRegistry::init('I18nModel');
@@ -19,20 +20,20 @@ $this->Html->addCrumb(__('Khách hàng'), null);
                             if ($vals['I18nModel']['field'] === 'title'):
                                 $title = $vals['I18nModel']['content'];
                             endif;
-                            if ($vals['I18nModel']['field'] === 'description'):
-                                $title = $vals['I18nModel']['content'];
-                            endif;
+                            if ($vals['I18nModel']['field'] === 'excerpt'):
+                                $excerpt = $vals['I18nModel']['content'];
+                          endif;
                         endforeach;
                     endif;
                 endif;
                 ?>
                 <li class="clearfix">
-                    <a href="javascript:;" class="lnk-img features">
+                    <a href="<?php echo $nodePath; ?>" class="lnk-img features">
                         <?php echo $this->Custom->image($images, array('alt' => 'images', 'class' => 'img-border')); ?>
                     </a>
                     <div class="blk-items">
-                        <a class="tit-items" href="javascript:;"><?php echo $title; ?></a>
-                        <div class="news-features"><?php echo $description; ?>
+                        <a class="tit-items" href="<?php echo $nodePath; ?>"><?php echo $title; ?></a>
+                        <div class="news-features"><?php echo $excerpt; ?>
                         </div>
                     </div>
                 </li>
@@ -61,7 +62,4 @@ $this->Html->addCrumb(__('Khách hàng'), null);
 <?php endif; ?>
 <style type="text/css">
     .blk-items .news-features p{margin: 3px 0px}
-    .blk-rows .blk-items .tit-items{cursor: default}
-    .blk-rows .blk-items .tit-items:hover{color: #41427b;text-decoration: none}
-    .blk-rows li .features{cursor: default}
 </style>

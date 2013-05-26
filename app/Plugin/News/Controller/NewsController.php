@@ -207,7 +207,7 @@ class NewsController extends NewsAppController {
             'D');
         $newStr = str_replace($arrayTVietDungSan, $arrayKoDau, $string);
         $newStr = str_replace($arrayTVietToHop, $arrayKoDau, $newStr);
-        $arrReplace = array('!', '@', '#', '$', '^', '&', '*', '(', ')', '_', '+', ',', '.', '\\', '/', '"', '?', ':');
+        $arrReplace = array('!', '@', '#', '$', '^', '&', '*', '(', ')', '_', '+', ',', '.', '\\', '/', '"', '?', ':', "'");
         $newStr = str_replace($arrReplace, '', $newStr);
         $newStr = str_replace(' ', '-', $newStr);
         $newStr = trim($newStr);

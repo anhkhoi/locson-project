@@ -1,0 +1,10 @@
+{
+    "name": "Customer",
+    "description": "Customer Plugin",
+    "author": "KhoiTran",
+    "authorEmail": "anhkhoi.2389@gmail.com",
+    "authorUrl": "http://anhkhoi.net",
+    "dependencies": {
+        "plugins": ["acl", "extensions"]
+    }
+}

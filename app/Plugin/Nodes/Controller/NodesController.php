@@ -79,7 +79,7 @@ class NodesController extends NodesAppController {
                 'fields' => array('id','title','slug','parent')
                 ),
              'Customer' => array(
-                'conditions' => array('status' => 1,'parent'=>0),
+                'conditions' => array('status' => 1),
                 'order' => array('id desc'),
                 'fields' => array('id','title','slug','parent')
                 ),

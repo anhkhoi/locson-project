@@ -19,10 +19,10 @@ $this->Html->addCrumb(__('Tin tức'), null);
                 if (count($data) > 0):
                     foreach ($data as $vals):
                         if ($vals['I18nModel']['field'] === 'title'):
-                                $title = $vals['I18nModel']['content'];
-                            elseif ($vals['I18nModel']['field'] === 'excerpt'):
-                                $excerpt = $vals['I18nModel']['content'];
-                            endif;
+                            $title = $vals['I18nModel']['content'];
+                        elseif ($vals['I18nModel']['field'] === 'excerpt'):
+                            $excerpt = $vals['I18nModel']['content'];
+                        endif;
                     endforeach;
                 endif;
                 ?>

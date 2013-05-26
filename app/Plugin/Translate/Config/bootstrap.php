@@ -60,6 +60,7 @@ Configure::write('Translate.models', array(
     'Customer' => array(
         'fields' => array(
             'title' => 'titleCustomer',
+            'excerpt' => 'excerptTranslation',
             'description' => 'descriptionCustomer'
         ),
         'translateModel' => 'Customer.Customer',
