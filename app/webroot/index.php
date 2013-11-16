@@ -90,6 +90,13 @@ if (isset($_SERVER['PATH_INFO']) && $_SERVER['PATH_INFO'] == '/favicon.ico') {
 	return;
 }
 
+// Gzip compress
+if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) {
+    ob_start("ob_gzhandler");
+} else {
+    ob_start();
+}
+
 App::uses('Dispatcher', 'Routing');
 
 $Dispatcher = new Dispatcher();
