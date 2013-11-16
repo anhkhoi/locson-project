@@ -1,6 +1,6 @@
 <?php $this->Nodes->set($node); ?>
 <div id="node-<?php echo $this->Nodes->field('id'); ?>" class="node node-type-<?php echo $this->Nodes->field('type'); ?>">
-	<h2><?php echo $this->Nodes->field('title'); ?></h2>
+	<h3 class="blk-tit"><?php echo $this->Nodes->field('title'); ?></h3>
 	<?php
 		echo $this->Nodes->info();
 		echo $this->Nodes->body();

@@ -341,3 +341,11 @@ Cache::config('_cake_model_', array(
 
 //Theme Config
 Configure::write('Theme.error',true);
+
+// Email Config
+Configure::write('EmailConfig', array(
+    'host' => 'localhost',
+    'username' => 'anhkhoi',
+    'password' => 'password-heree',
+    'address' => 'support@anhkhoi.net'
+));

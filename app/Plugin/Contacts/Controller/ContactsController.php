@@ -43,6 +43,11 @@ class ContactsController extends ContactsAppController {
      */
     public $uses = array('Contacts.Contact', 'Contacts.Message');
 
+
+    public function beforeFilter() {
+        parent::beforeFilter();
+    }
+
     /**
      * Admin index
      *
@@ -183,9 +188,32 @@ class ContactsController extends ContactsAppController {
             
             $continue = $this->_validation($continue, $contact);
             
-            //$continue = $this->_send_email($continue, $contact);
+            // $continue = $this->_send_email($continue, $contact);
+
+            $emailConfig = Configure::read('EmailConfig');
             
-            $this->Contact->save($this->request->data['Message']);
+            if (!empty($emailConfig)) {
+
+                $addressTo      = Configure::read('Site.email');
+                $addressFrom    = $this->request->data['Message']['email'];
+                $content        = $this->request->data['Message']['body'];
+                $Subject        = $this->request->data['Message']['title'];
+
+                $config = array(
+                    'sendMailType' => 'Default',
+                    'webmail' => array(
+                        'host' => $emailConfig['host'],
+                        'username' => $emailConfig['username'],
+                        'password' => $emailConfig['password'],
+                        'address' => $emailConfig['address']
+                    )
+                );
+
+                $continue = $this->_send($addressFrom, $addressTo, $content, $Subject, $config);
+            }
+            
+            //Contact
+            $this->Message->save($this->request->data['Message']);
 
             if ($continue === true) {
                 //$this->Session->setFlash(__('Your message has been received.'));
@@ -193,6 +221,8 @@ class ContactsController extends ContactsAppController {
 
                 echo $this->flash(__('Liên hệ của bạn đã được gửi'), '/');
 
+            } else {
+                echo $this->flash(__('Liên hệ của bạn gửi không thành công, vui lòng thử lại sau'), '/');                
             }
         }
 
@@ -273,7 +303,11 @@ class ContactsController extends ContactsAppController {
      * @access protected
      */
     protected function _send_email($continue, $contact) {
+        //echo 'dlfdlfkdf';
         $email = new CakeEmail();
+
+        //echo 'vooooooo';
+        //exit;
         if ($contact['Contact']['message_notify'] && $continue === true) {
             $siteTitle = Configure::read('Site.title');
             $email->from($this->request->data['Message']['email'])
@@ -291,6 +325,75 @@ class ContactsController extends ContactsAppController {
         }
 
         return $continue;
+    }
+
+    /**
+    * Send mail using PHP Mailer
+    */
+    protected function _send($addressFrom, $addressTo, $content, $Subject = null, $config = array()) {
+        //vendor('phpmailer'.DS.'class.phpmailer');
+        App::import('Vendor', 'PHPMailer', array('file'=>'PHPMailer'.DS.'class.phpmailer.php'));
+
+        $sendMailType = $config['sendMailType'];
+
+        // Using gmail
+        // $gmailUsername = $config['gmail']['username'];
+        // $gmailPassword = $config['gmail']['password'];
+
+        // Using webmail
+        $webmailHost = $config['webmail']['host'];
+        $webmailUsername = $config['webmail']['username'];
+        $webmailPassword = $config['webmail']['password'];
+        $webmailAddress = $config['webmail']['address'];
+
+        $flag = true;
+        $mailer = new PHPMailer();
+
+        $mailer->IsSMTP();
+        $mailer->SMTPAuth = true;
+        $mailer->CharSet = 'utf-8';
+        //$mail->SMTPDebug  = 2;
+
+        if ($sendMailType == 'Default') {
+            $mailer->Host = $webmailHost;
+            $mailer->Port = 25;
+            $mailer->Username = $webmailUsername;
+            $mailer->Password = $webmailPassword;
+            $mailer->SetFrom($addressFrom, '');
+        } else { //Gmail
+            $mailer->SMTPSecure = 'ssl';
+            $mailer->Host = 'smtp.gmail.com';
+            $mailer->Port = 465;
+            $mailer->Username = $gmailUsername;
+            $mailer->Password = $gmailPassword;
+            $mailer->SetFrom($gmailUsername, '');
+        }
+
+        $mailer->AddAddress($addressTo); // to
+
+        if ($Subject == null) {
+            $mailer->Subject = 'Loc Son Information';
+        } else {
+            $mailer->Subject = $Subject;
+        }
+
+        $mailer->IsHTML(true);
+
+        if ($content != '') {
+            $body = $content;
+        } else {
+            $body = "";
+        }
+        //HTML
+        $mailer->Body = $body;
+
+        if (!$mailer->Send()) {
+            $flag = false;
+        } else {
+            $flag = true;
+        }
+        return $flag;
+
     }
 
 }

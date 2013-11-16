@@ -142,7 +142,7 @@ class SecurityComponent extends Component {
  *
  * @var boolean
  */
-	public $validatePost = true;
+	public $validatePost = false;
 
 /**
  * Whether to use CSRF protected forms.  Set to false to disable CSRF protection on forms.

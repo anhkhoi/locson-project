@@ -1,66 +1,67 @@
 {
-	"Site": {
-		"acl_plugin": "Acl",
-		"address": "76 CMT8, P17, Q3, Tp.HCM",
-		"copyright": "Copyright &copy 2013 by LocSon Company",
-		"email": "locson@gmail.com",
-		"feed_url": "",
-		"locale": "vie",
-		"status": 1,
-		"tagline": "",
-		"theme": "locson",
-		"timezone": 0,
-		"title": "Loc Son Company",
-		"phone": "0192.928.892",
-		"logo": "/uploads/logo.jpg",
-		"headerinfo": "<p>Vi\u1ec7t In quan t\u00e2m ch\u0103m s\u00f3c h\u00ecnh \u1ea3nh th\u01b0\u01a1ng hi\u1ec7u c\u1ee7a b\u1ea1n b\u1edfi th\u01b0\u01a1ng hi\u1ec7u l\u00e0 t\u00e0i s\u1ea3n gi\u00e1 tr\u1ecb nh\u1ea5t m\u00e0 b\u1ea1n c\u00f3 \u0111\u01b0\u1ee3c sau bao nhi\u00eau kh\u00f3 kh\u0103n g\u00e2y d\u1ef1ng tr\u00ean th\u01b0\u01a1ng tr\u01b0\u1eddng.</p>\r\n<p><strong>\u0110\u00f3 l\u00e0 s\u1ee9 m\u1ec7nh \u0111\u1ea7y t\u1ef1 h\u00e0o c\u1ee7a ch\u00fang t\u00f4i.</strong></p>\r\n<p>\u0110\u1ecba ch\u1ec9: 423/29 L\u1ea1c Long Qu\u00e2n, Ph\u01b0\u1eddng 5, Q.11, TP.HCM</p>\r\n<p>Hotline: 08.3975.6726 - Fax: 08.3975.2451</p>\r\n",
-		"footerinfo": "<p><b>Cty C\u1ed5 Ph\u1ea7n Vi\u1ec7t In</b></p>\r\n    <p>\u0110\u1ecba ch\u1ec9: 423/29 L\u1ea1c Long Qu\u00e2n, Ph\u01b0\u1eddng 5, Q.11, TP.HCM</p>\r\n    <p>\u0110i\u1ec7n tho\u1ea1i: 08.3975.6726 - Fax: 08.3975.2451</p>\r\n    <p>Email: <a href=\"mailto:kinhdoanh@congtyvietin.com\">kinhdoanh@congtyvietin.com</a> - <a href=\"mailto:sale@congtyvietin.com\">sale@congtyvietin.com</a></p>"
-	},
-	"Hook": {
-		"bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate,PlgService,Service,News,Products,Support,Customer"
-	},
-	"Access Control": {
-		"models": "",
-		"multiRole": 0,
-		"rowLevel": 0
-	},
-	"Comment": {
-		"date_time_format": "M d, Y",
-		"email_notification": 1,
-		"feed_limit": 10,
-		"level": 1
-	},
-	"Croogo": {
-		"version": "1.5.0\n"
-	},
-	"Meta": {
-		"description": "C\u00f4ng ty in \u1ea5n Vi\u1ec7t in chuy\u00ean cung c\u1ea5p c\u00e1c d\u1ecbch v\u1ee5 in \u1ea5n, in gia c\u00f4ng, in offset gi\u00e1 r\u1ebd v\u1edbi c\u00f4ng ngh\u1ec7 hi\u1ec7n \u0111\u1ea1i v\u00e0 ch\u1ea5t l\u01b0\u1ee3ng t\u1ed1t nh\u1ea5t",
-		"generator": "Croogo - Content Management System",
-		"keywords": "l\u1ed9c s\u01a1n, in \u1ea5n, gia c\u00f4ng, d\u1ecbch v\u1ee5, in offset, in gi\u00e1 r\u1ebd, c\u00f4ng ngh\u1ec7 hi\u1ec7n \u0111\u1ea1i, uy t\u00edn, ch\u1ea5t l\u01b0\u1ee3ng",
-		"robots": "index, follow"
-	},
-	"Reading": {
-		"date_time_format": "D, M d Y H:i:s",
-		"nodes_per_page": 5
-	},
-	"Service": {
-		"akismet_key": "",
-		"akismet_url": "",
-		"recaptcha_private_key": "6LekltcSAAAAAOjVh1eBtp5p75FcGMxaH2O5uTlD",
-		"recaptcha_public_key": "6LekltcSAAAAAL7eNIyZ4o4ANTDqpz53pefVCbks"
-	},
-	"Writing": {
-		"wysiwyg": 1
-	},
-	"Map": {
-		"Latitude": 106.658229,
-		"Longtitude": 10.790383
-	},
-	"Intro": {
-		"images": "/uploads/thumb_4.jpg"
-	},
-	"Product": {
-		"feature": "46,11,35,36,37,38,39,40,43,50,51,52,53,54,55,56,",
-		"contact": "<span><b>Kh\u00e1ch h\u00e0ng mu\u1ed1n bi\u1ebft chi ti\u1ebft xin li\u00ean h\u1ec7 theo th\u00f4ng tin d\u01b0\u1edbi \u0111\u00e2y</b></span>\r\n<span><b>T\u01b0 v\u1ea5n 1:</b> 023029309 , <b>T\u01b0 v\u1ea5n 2:</b> 023029029</span>\r\n<span>Ho\u1eb7c g\u1eedi li\u00ean h\u1ec7: <a href=\"/lien-he.html\">T\u1ea1i \u0111\u00e2y</a></span>\r\n<span><b>Xin tr\u00e2n th\u00e0nh c\u1ea3m \u01a1n.</b></span>"
-	}
+    "Site": {
+        "acl_plugin": "Acl",
+        "address": "76 CMT8, P17, Q3, Tp.HCM",
+        "copyright": "Copyright &copy 2013 by LocSon Company",
+        "email": "locson@gmail.com",
+        "feed_url": "",
+        "locale": "vie",
+        "status": 1,
+        "tagline": "",
+        "theme": "locson",
+        "timezone": 0,
+        "title": "Loc Son Company",
+        "phone": "0192.928.892",
+        "logo": "/uploads/logo.jpg",
+        "headerinfo": "<p>Việt In quan tâm chăm sóc hình ảnh thương hiệu của bạn bởi thương hiệu là tài sản giá trị nhất mà bạn có được sau bao nhiêu khó khăn gây dựng trên thương trường.</p>\r\n<p><strong>Đó là sứ mệnh đầy tự hào của chúng tôi.</strong></p>\r\n<p>Địa chỉ: 423/29 Lạc Long Quân, Phường 5, Q.11, TP.HCM</p>\r\n<p>Hotline: 08.3975.6726 - Fax: 08.3975.2451</p>\r\n",
+        "footerinfo": "<p><b>Cty Cổ Phần Việt In</b></p>\r\n    <p>Địa chỉ: 423/29 Lạc Long Quân, Phường 5, Q.11, TP.HCM</p>\r\n    <p>Điện thoại: 08.3975.6726 - Fax: 08.3975.2451</p>\r\n    <p>Email: <a href=\"mailto:kinhdoanh@congtyvietin.com\">kinhdoanh@congtyvietin.com</a> - <a href=\"mailto:sale@congtyvietin.com\">sale@congtyvietin.com</a></p>",
+        "copyright1": "Copyright &copy 2013 by LocSon Company"
+    },
+    "Hook": {
+        "bootstraps": "Settings,Comments,Contacts,Nodes,Meta,Menus,Users,Blocks,Taxonomy,FileManager,Tinymce,Translate,PlgService,Service,News,Products,Support,Customer"
+    },
+    "Access Control": {
+        "models": "",
+        "multiRole": 0,
+        "rowLevel": 0
+    },
+    "Comment": {
+        "date_time_format": "M d, Y",
+        "email_notification": 1,
+        "feed_limit": 10,
+        "level": 1
+    },
+    "Croogo": {
+        "version": "1.5.0\n"
+    },
+    "Meta": {
+        "description": "Công ty in ấn Việt in chuyên cung cấp các dịch vụ in ấn, in gia công, in offset giá rẽ với công nghệ hiện đại và chất lượng tốt nhất",
+        "generator": "Croogo - Content Management System",
+        "keywords": "lộc sơn, in ấn, gia công, dịch vụ, in offset, in giá rẽ, công nghệ hiện đại, uy tín, chất lượng",
+        "robots": "index, follow"
+    },
+    "Reading": {
+        "date_time_format": "D, M d Y H:i:s",
+        "nodes_per_page": 5
+    },
+    "Service": {
+        "akismet_key": "",
+        "akismet_url": "",
+        "recaptcha_private_key": "6LekltcSAAAAAOjVh1eBtp5p75FcGMxaH2O5uTlD",
+        "recaptcha_public_key": "6LekltcSAAAAAL7eNIyZ4o4ANTDqpz53pefVCbks"
+    },
+    "Writing": {
+        "wysiwyg": 1
+    },
+    "Map": {
+        "Latitude": 106.658229,
+        "Longtitude": 10.790383
+    },
+    "Intro": {
+        "images": "/uploads/thumb_4.jpg"
+    },
+    "Product": {
+        "feature": "46,11,35,36,37,38,39,40,43,50,51,52,53,54,55,56,",
+        "contact": "<span><b>Khách hàng muốn biết chi tiết xin liên hệ theo thông tin dưới đây</b></span>\r\n<span><b>Tư vấn 1:</b> 023029309 , <b>Tư vấn 2:</b> 023029029</span>\r\n<span>Hoặc gửi liên hệ: <a href=\"/lien-he.html\">Tại đây</a></span>\r\n<span><b>Xin trân thành cảm ơn.</b></span>"
+    }
 }

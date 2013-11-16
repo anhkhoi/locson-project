@@ -67,7 +67,9 @@ class AttachmentsController extends FileManagerAppController {
 
         if ($this->action == 'admin_add') {
             $this->Security->csrfCheck = false;
+            $this->Security->validatePost = false;   
         }
+        
     }
 
     /**

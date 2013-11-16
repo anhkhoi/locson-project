@@ -1654,3 +1654,51 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
 [main] - APP\webroot\index.php, line 96
 
+2013-11-16 02:22:46 Notice: Notice (8): Undefined variable: parentId in [/Users/khoitran/Documents/workspace/locson-project/app/Plugin/News/View/News/view.ctp, line 4]
+Trace:
+include - APP/Plugin/News/View/News/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::render() - CORE/Cake/View/View.php, line 468
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+AppController::render() - APP/Controller/AppController.php, line 278
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2013-11-16 02:22:46 Notice: Notice (8): Undefined variable: parentId in [/Users/khoitran/Documents/workspace/locson-project/app/Plugin/News/View/News/view.ctp, line 4]
+Trace:
+include - APP/Plugin/News/View/News/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::render() - CORE/Cake/View/View.php, line 468
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+AppController::render() - APP/Controller/AppController.php, line 278
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2013-11-16 02:22:46 Notice: Notice (8): Undefined variable: arrData in [/Users/khoitran/Documents/workspace/locson-project/app/Plugin/News/View/News/view.ctp, line 7]
+Trace:
+include - APP/Plugin/News/View/News/view.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::render() - CORE/Cake/View/View.php, line 468
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+AppController::render() - APP/Controller/AppController.php, line 278
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2013-11-16 02:22:46 Notice: Notice (8): Undefined variable: arrData in [/Users/khoitran/Documents/workspace/locson-project/app/Plugin/News/View/News/view.ctp, line 7]
+Trace:
+include - APP/Plugin/News/View/News/view.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::render() - CORE/Cake/View/View.php, line 468
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+AppController::render() - APP/Controller/AppController.php, line 278
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+

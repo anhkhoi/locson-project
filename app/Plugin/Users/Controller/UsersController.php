@@ -219,6 +219,7 @@ class UsersController extends UsersAppController {
 		$this->set('title_for_layout', __('Admin Login'));
 		$this->layout = "admin_login";
 		if ($this->request->is('post')) {
+			
 			if ($this->Auth->login()) {
 				Croogo::dispatchEvent('Controller.Users.adminLoginSuccessful', $this);
 				$this->redirect($this->Auth->redirect());
